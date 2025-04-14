@@ -2,7 +2,7 @@
 Script to query EPA's ATTAINS database to retrieve AU-beneficial use support status within a user-specified subbasin. The script only pulls ATTAINS data for Idaho assessment units and is compatible with querying multiple HUCs at a time. 
 
 # Background Information
-EPA's ATTAINS database houses the assessment status and outcomes of all Idaho surface water assessment units. This script utilizes the rATTAINS package developed and supported by EPA. 
+EPA's ATTAINS database houses the assessment status and outcomes of all surface water. This script utilizes the rATTAINS package developed and supported by EPA. 
 
 # Getting Started 
 To get started, begin by specifying the user inputs listed at the top of the file: eight digit HUC code, and your computer username. Be sure to follow the formatting guidelines provided within the script. Once the user-specified inputs are provided, click on "Source" and watch the console to see if you run into any errors. If the script ran successfully, there will be an Excel file for each HUC in your Downloads folder. Within the Excel file, there will be several sheets: 
