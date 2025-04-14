@@ -2,7 +2,7 @@
 ################################################################################
 # Direct ATTAINS download for assessment information for AUs per subbasin.
 # 
-# Lily Conrad, IDEQ State Office
+# Lily Conrad
 # last update: 3/14/2025
 #
 # Package citation: 
