@@ -191,7 +191,7 @@ for (i in huc_list) {
              use_attainment_code_name) %>% 
     summarise(AU_count = n())
   
-  HUC_UseStatus.temp <- as.data.frame(pivot_wider(test2, 
+  HUC_UseStatus.temp <- as.data.frame(pivot_wider(HUC_UseStatus.temp, 
                                                   id_cols = use_attainment_code_name,
                                                   names_from = use_name,
                                                   values_from = AU_count))
@@ -208,13 +208,13 @@ for (i in huc_list) {
              parameter_name) %>% 
     summarise(AU_count = n())
   
-  HUC_Causes.temp <- pivot_wider(test3, 
+  HUC_Causes.temp <- pivot_wider(HUC_Causes.temp, 
                          id_cols = parameter_name,
                          names_from = use_name,
                          values_from = AU_count)
   
   # Summary dataframe of IR categories and AU counts per category. 
-  HUC_IRCats.temp <- assessments.merge %>%
+  HUC_IRCats.temp <- Assessments_State %>%
     filter(HUC8 == i) %>%
     select(assessment_unit_identifier, 
            EPA_IR_category) %>%
